@@ -9,7 +9,9 @@
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   // NOTE hide deck and slide content until Bespoke.js classes have been added
-  &:not(.bespoke-parent), section:not(.bespoke-slide) { display: none }
+  &:not(.bespoke-parent), section:not(.bespoke-slide) {
+    display: none
+  }
 
 .bespoke-parent, .bespoke-scale-parent
   position absolute
@@ -43,7 +45,9 @@
   pointer-events auto
   opacity 1
   z-index 1 // NOTE Webkit requires z-index to be 1 for elements to receive focus (may no longer apply)
-  &.no-transition { transition: none }
+  &.no-transition {
+    transition: none
+  }
 
 .bespoke-bullet-inactive
   visibility hidden
@@ -51,5 +55,5 @@
 .fade .bespoke-bullet-active:not(.bespoke-bullet-current)
   opacity 0.1
 
-.vanish  .bespoke-bullet-active:not(.bespoke-bullet-current)
+.vanish .bespoke-bullet-active:not(.bespoke-bullet-current)
   opacity 0
